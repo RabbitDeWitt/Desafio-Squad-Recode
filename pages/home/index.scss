@@ -1,0 +1,150 @@
+@import "../../styles/variables";
+
+.hero-title {
+  font-weight: bold;
+  color: hsl(0deg, 0%, 100%);
+  font-size: $fs-32  !important;
+  text-align: center;
+  text-shadow: 2px 2px 4px hsl(0deg, 0%, 0%);
+  margin-block: 2%;
+}
+
+.gif {
+  text-align: center;
+
+  img {
+    max-width: 100% !important;
+    animation: zoomInAnimation 5s ease;
+  }
+}
+
+#quick-options .box-container {
+  @include box-container();
+
+  .box {
+    @include box();
+
+    .title {
+      font-size: $fs-20;
+      color: $black;
+    }
+
+    p {
+      line-height: 1.5;
+      padding-top: 1.5rem;
+      font-size: $fs-18;
+
+      span {
+        color: $dark-blue;
+      }
+    }
+  }
+
+  .tutor {
+    text-align: center;
+
+    p {
+      padding-bottom: 1rem;
+    }
+  }
+
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 2rem;
+
+    a {
+      padding: 1rem;
+      border-radius: .5rem;
+      font-size: $fs-16;
+      background-color: $light-bg;
+      transition: $transition;
+
+      i,
+      span {
+        transition: $transition;
+      }
+
+      i {
+        margin-right: .5rem;
+      }
+
+      &:hover {
+        background-color: $dark-blue;
+
+        i {
+          color: $white;
+        }
+
+        span {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+#courses .box-container {
+  @include box-container();
+
+  .box {
+    @include box();
+
+    .tutor {
+      margin-bottom: 2.5rem;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      img {
+        @include profileImage(5rem);
+      }
+
+      h3 {
+        font-size: 2rem;
+        color: $dark-blue;
+        margin-bottom: .2rem;
+      }
+
+      span {
+        font-size: 1.5rem;
+        color: $black;
+      }
+    }
+
+    .thumb {
+      width: 100%;
+      border-radius: .5rem;
+      height: 20rem;
+      object-fit: cover;
+    }
+
+    .btn {
+      width: fit-content;
+    }
+
+    .title {
+      font-size: $fs-20;
+      color: $black;
+      margin-top: .5rem;
+      padding: .5rem 0;
+    }
+  }
+}
+
+
+
+
+
+@keyframes zoomInAnimation {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
