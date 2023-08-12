@@ -22,20 +22,21 @@
   @include box-container();
 
   .box {
-    @include box();
+    @include box(var(--white));
 
     .title {
       font-size: $fs-20;
-      color: $black;
+      color: var(--black);
     }
 
     p {
       line-height: 1.5;
       padding-top: 1.5rem;
       font-size: $fs-18;
+      color: var(--black);
 
       span {
-        color: $dark-blue;
+        color: var(--dark-blue);
       }
     }
   }
@@ -58,12 +59,13 @@
       padding: 1rem;
       border-radius: .5rem;
       font-size: $fs-16;
-      background-color: $light-bg;
+      background-color: var(--light-bg);
       transition: $transition;
 
       i,
       span {
         transition: $transition;
+        color: var(--dark-blue);
       }
 
       i {
@@ -71,80 +73,85 @@
       }
 
       &:hover {
-        background-color: $dark-blue;
+        background-color: var(--dark-blue);
 
-        i {
-          color: $white;
-        }
-
+        i,
         span {
-          color: $white;
+          color: var(--white);
         }
       }
     }
   }
 }
 
-#courses .box-container {
-  @include box-container();
+#courses {
+  .box-container {
+    @include box-container();
 
-  .box {
-    @include box();
+    .box {
+      @include box(var(--white));
+      height: 437px;
 
-    .tutor {
-      margin-bottom: 2.5rem;
-      display: flex;
-      align-items: center;
-      gap: 2rem;
+      .tutor {
+        margin-bottom: 2.5rem;
+        display: flex;
+        align-items: center;
+        gap: 2rem;
 
-      img {
-        @include profileImage(5rem);
+        img {
+          @include profileImage(5rem);
+        }
+
+        h3 {
+          font-size: $fs-18;
+          color: var(--dark-blue);
+          margin-bottom: .2rem;
+        }
+
+        span {
+          font-size: $fs-13;
+          color: var(--black);
+        }
       }
 
-      h3 {
-        font-size: 2rem;
-        color: $dark-blue;
-        margin-bottom: .2rem;
+      .thumb {
+        position: relative;
+
+        img {
+          width: 100%;
+          border-radius: .5rem;
+          height: 20rem;
+          object-fit: cover;
+        }
+
+        span {
+          position: absolute;
+          top: 1rem;
+          left: 1rem;
+          border-radius: .5rem;
+          padding: .5rem 1.5rem;
+          background-color: rgba(0, 0, 0, .3);
+          color: var(--white);
+          font-size: 1.5rem;
+        }
       }
 
-      span {
-        font-size: 1.5rem;
-        color: $black;
+      .btn {
+        width: fit-content;
+      }
+
+      .title {
+        font-size: $fs-20;
+        color: var(--black);
+        margin-top: .5rem;
+        padding: .5rem 0;
+        height: 5.8rem;
       }
     }
+  }
 
-    .thumb {
-      position: relative;
-
-      img {
-        width: 100%;
-        border-radius: .5rem;
-        height: 20rem;
-        object-fit: cover;
-      }
-
-      span {
-        position: absolute;
-        top: 1rem;
-        left: 1rem;
-        border-radius: .5rem;
-        padding: .5rem 1.5rem;
-        background-color: rgba(0, 0, 0, .3);
-        color: $white;
-        font-size: 1.5rem;
-      }
-    }
-
-    .btn {
-      width: fit-content;
-    }
-
-    .title {
-      font-size: $fs-20;
-      color: $black;
-      margin-top: .5rem;
-      padding: .5rem 0;
-    }
+  .btn {
+    width: fit-content;
   }
 }
 

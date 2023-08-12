@@ -91,7 +91,7 @@ export const courses = [
     date: "05-05-2023",
     numOfVid: 13,
     thumb: 3,
-    couse: "Preparação - Exames de Proficiência"
+    course: "Preparação - Exames de Proficiência"
   },
   {
     prof: "Ron Weasley",
@@ -99,7 +99,7 @@ export const courses = [
     date: "11-05-2023",
     numOfVid: 13,
     thumb: 2,
-    couse: "Inglês para Negócios"
+    course: "Inglês para Negócios"
   },
   {
     prof: "Albus Dumbledore",
@@ -107,7 +107,7 @@ export const courses = [
     date: "21-07-2023",
     numOfVid: 10,
     thumb: 1,
-    couse: "Inglês Geral"
+    course: "Inglês Geral"
   },
   {
     prof: "Hermione Granger",
@@ -115,7 +115,7 @@ export const courses = [
     date: "07-07-2023",
     numOfVid: 25,
     thumb: 4,
-    couse: "Inglês Acadêmico"
+    course: "Inglês Acadêmico"
   },
   {
     prof: "Draco Malfoy",
@@ -123,15 +123,15 @@ export const courses = [
     date: "27-06-2023",
     numOfVid: 16,
     thumb: 5,
-    couse: "Inglês para viagens"
+    course: "Inglês para viagens"
   },
   {
-    prof: "Draco Malfoy",
+    prof: "Minerva McGonagall",
     profPic: 7,
     date: "09-06-2023",
     numOfVid: 12,
     thumb: 6,
-    couse: "Inglês Técnico para área de TI"
+    course: "Inglês Técnico para área de TI"
   },
 
 ]

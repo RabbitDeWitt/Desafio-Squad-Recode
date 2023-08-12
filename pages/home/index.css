@@ -25,20 +25,21 @@
 }
 #quick-options .box-container .box {
   border-radius: 0.5rem;
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: var(--white);
   padding: 2rem;
 }
 #quick-options .box-container .box .title {
   font-size: 2rem;
-  color: hsl(210deg, 29%, 24%);
+  color: var(--black);
 }
 #quick-options .box-container .box p {
   line-height: 1.5;
   padding-top: 1.5rem;
   font-size: 1.8rem;
+  color: var(--black);
 }
 #quick-options .box-container .box p span {
-  color: hsl(227deg, 64%, 14%);
+  color: var(--dark-blue);
 }
 #quick-options .box-container .tutor {
   text-align: center;
@@ -56,24 +57,23 @@
   padding: 1rem;
   border-radius: 0.5rem;
   font-size: 1.6rem;
-  background-color: hsl(227deg, 100%, 91%);
+  background-color: var(--light-bg);
   transition: 0.2s ease-out;
 }
 #quick-options .box-container .flex a i,
 #quick-options .box-container .flex a span {
   transition: 0.2s ease-out;
+  color: var(--dark-blue);
 }
 #quick-options .box-container .flex a i {
   margin-right: 0.5rem;
 }
 #quick-options .box-container .flex a:hover {
-  background-color: hsl(227deg, 64%, 14%);
+  background-color: var(--dark-blue);
 }
-#quick-options .box-container .flex a:hover i {
-  color: hsl(0deg, 0%, 100%);
-}
+#quick-options .box-container .flex a:hover i,
 #quick-options .box-container .flex a:hover span {
-  color: hsl(0deg, 0%, 100%);
+  color: var(--white);
 }
 
 #courses .box-container {
@@ -85,8 +85,9 @@
 }
 #courses .box-container .box {
   border-radius: 0.5rem;
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: var(--white);
   padding: 2rem;
+  height: 437px;
 }
 #courses .box-container .box .tutor {
   margin-bottom: 2.5rem;
@@ -101,13 +102,13 @@
   margin-bottom: 0.5rem;
 }
 #courses .box-container .box .tutor h3 {
-  font-size: 2rem;
-  color: hsl(227deg, 64%, 14%);
+  font-size: 1.8rem;
+  color: var(--dark-blue);
   margin-bottom: 0.2rem;
 }
 #courses .box-container .box .tutor span {
-  font-size: 1.5rem;
-  color: hsl(210deg, 29%, 24%);
+  font-size: 1.3rem;
+  color: var(--black);
 }
 #courses .box-container .box .thumb {
   position: relative;
@@ -126,7 +127,7 @@
   border-radius: 0.5rem;
   padding: 0.5rem 1.5rem;
   background-color: rgba(0, 0, 0, 0.3);
-  color: hsl(0deg, 0%, 100%);
+  color: var(--white);
   font-size: 1.5rem;
 }
 #courses .box-container .box .btn {
@@ -136,9 +137,15 @@
 }
 #courses .box-container .box .title {
   font-size: 2rem;
-  color: hsl(210deg, 29%, 24%);
+  color: var(--black);
   margin-top: 0.5rem;
   padding: 0.5rem 0;
+  height: 5.8rem;
+}
+#courses .btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 @-webkit-keyframes zoomInAnimation {
