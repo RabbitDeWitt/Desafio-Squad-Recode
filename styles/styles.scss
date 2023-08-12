@@ -58,6 +58,19 @@ section {
   margin: 0 auto;
 }
 
+.heading {
+  font-size: $fs-25;
+  color: $black;
+  margin: 2.5rem auto;
+  border-bottom: $border;
+  padding-bottom: 1.5rem;
+  text-transform: capitalize;
+  text-align: center;
+  min-width: calc(185px + 50px);
+  max-width: 30%;
+  left: 50%;
+}
+
 .btn,
 .option-btn,
 .delete-btn,

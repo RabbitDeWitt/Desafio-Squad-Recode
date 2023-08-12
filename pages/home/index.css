@@ -110,11 +110,24 @@
   color: hsl(210deg, 29%, 24%);
 }
 #courses .box-container .box .thumb {
+  position: relative;
+}
+#courses .box-container .box .thumb img {
   width: 100%;
   border-radius: 0.5rem;
   height: 20rem;
   -o-object-fit: cover;
      object-fit: cover;
+}
+#courses .box-container .box .thumb span {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.5rem;
 }
 #courses .box-container .box .btn {
   width: -webkit-fit-content;
