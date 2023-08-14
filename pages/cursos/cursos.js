@@ -1,41 +1,18 @@
-import { navbar, sidebar } from "../../scripts/components.js";
-import { courses, quickOptions } from "../../scripts/data.js";
+import { navbar, sidebar } from "../../scripts/components.js"
+import { courses } from "../../scripts/data.js"
 
 const header = document.querySelector("header")
 const menu = document.querySelector(".sidebar")
-const quickOptionsSections = document.querySelectorAll(".cards-options")
 const coursesSection = document.querySelector("#courses .box-container")
 
 header.innerHTML = navbar()
 menu.innerHTML = sidebar()
 
-/* OPÇÕES RÁPIDAS CARDS */
-quickOptions.map(({ title, itens }, index) => {
-  let links = "";
-
-  itens.map(({ icon, label }) => {
-    links += `
-    <a href="#"><i class="fas fa-${icon}"></i><span>${label}</span></a>
-    `
-  })
-
-  quickOptionsSections[index].innerHTML += `
-      <div class="box">
-        <h3 class="title">${title}</h3>
-        <div class="flex">
-        ${links}
-        </div>
-      </div>
-`
-})
-
-
 courses.sort((a, b) => {
   return a.course < b.course ? -1 : a.course > b.course ? 1 : 0
 })
 
-for (let i = 0; i < 4; i++) {
-  const { prof, profPic, date, numOfVid, thumb, course } = courses[i]
+courses.map(({ prof, profPic, date, numOfVid, thumb, course }) => {
   coursesSection.innerHTML += `
         <div class="box">
           <div class="tutor">
@@ -52,8 +29,5 @@ for (let i = 0; i < 4; i++) {
           <h3 class="title">${course}</h3>
           <a href="../playlist/playlist.html" class="btn btn-dark-blue">ver playslist</a>
         </div>
-  `
-}
-
-
-
+`
+})
