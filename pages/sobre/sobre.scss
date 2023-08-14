@@ -36,14 +36,16 @@
   }
 }
 
-.box-container {
-  @include box-container();
+.sobre .box-container {
+  display: flex;
+  gap: 1.5rem;
   margin-top: 25px;
+  flex-wrap: wrap;
 
   .box {
     @include box(var(--white));
     display: flex;
-    flex: 1 1 20rem;
+    flex: 1 1 25rem;
     align-items: center;
     gap: 2rem;
 
@@ -61,6 +63,43 @@
     span {
       color: var(--light-color);
       font-size: $fs-16;
+    }
+  }
+}
+
+#reviews-section {
+  @include box-container(30rem);
+
+  .box {
+    @include box(var(--white));
+    padding-top: 1.5rem;
+
+    p {
+      list-style: 2;
+      font-size: $fs-17;
+      color: var(--light-color);
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+
+      img {
+        @include profileImage(5rem);
+      }
+
+      h3 {
+        font-size: $fs-20;
+        color: var(--black);
+        margin-bottom: .2rem;
+      }
+
+      i {
+        color: var(--dark-blue);
+        font-size: $fs-15;
+      }
     }
   }
 }

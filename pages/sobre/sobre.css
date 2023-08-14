@@ -30,32 +30,70 @@
   margin-inline: auto;
 }
 
-.box-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(27.5rem, 1fr));
+.sobre .box-container {
+  display: flex;
   gap: 1.5rem;
-  align-items: flex-start;
-  justify-content: center;
   margin-top: 25px;
+  flex-wrap: wrap;
 }
-.box-container .box {
+.sobre .box-container .box {
   border-radius: 0.5rem;
   background-color: var(--white);
   padding: 2rem;
   display: flex;
-  flex: 1 1 20rem;
+  flex: 1 1 25rem;
   align-items: center;
   gap: 2rem;
 }
-.box-container .box i {
+.sobre .box-container .box i {
   color: var(--black);
   font-size: 3rem;
 }
-.box-container .box h3 {
+.sobre .box-container .box h3 {
   color: var(--dark-blue);
   font-size: 2.5rem;
 }
-.box-container .box span {
+.sobre .box-container .box span {
   color: var(--light-color);
   font-size: 1.6rem;
+}
+
+#reviews-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+#reviews-section .box {
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  padding: 2rem;
+  padding-top: 1.5rem;
+}
+#reviews-section .box p {
+  list-style: 2;
+  font-size: 1.7rem;
+  color: var(--light-color);
+}
+#reviews-section .box .user {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+#reviews-section .box .user img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}
+#reviews-section .box .user h3 {
+  font-size: 2rem;
+  color: var(--black);
+  margin-bottom: 0.2rem;
+}
+#reviews-section .box .user i {
+  color: var(--dark-blue);
+  font-size: 1.5rem;
 }/*# sourceMappingURL=sobre.css.map */

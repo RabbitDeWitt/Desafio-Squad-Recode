@@ -19,7 +19,7 @@
 }
 
 #quick-options .box-container {
-  @include box-container();
+  @include box-container(27.5rem);
 
   .box {
     @include box(var(--white));
@@ -86,7 +86,7 @@
 
 #courses {
   .box-container {
-    @include box-container();
+    @include box-container(27.5rem);
 
     .box {
       @include box(var(--white));
