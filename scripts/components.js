@@ -38,9 +38,9 @@ export const navbar = () => {
 
 export const sidebar = () => {
   let links = ""
-  menuItens.map(({ icon, label, link }) => {
+  menuItens.map(({ icon, label, folder, page }) => {
     links += `
-  <a href="/pages/${link}/${link === "home" ? "index" : link}.html"><i class="fas fa-${icon}"></i><span>${label}</span></a>
+  <a href="/pages/${folder}/${page}.html"><i class="fas fa-${icon}"></i><span>${label}</span></a>
   `
   })
   return `

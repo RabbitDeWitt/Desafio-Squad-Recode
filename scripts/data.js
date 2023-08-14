@@ -2,27 +2,32 @@ export const menuItens = [
   {
     icon: "home",
     label: "Home",
-    link: "home"
+    folder: "home",
+    page: "index",
   },
   {
     icon: "graduation-cap",
     label: "Cursos",
-    link: "cursos"
+    folder: "cursos",
+    page: "cursos",
   },
   {
     icon: "chalkboard-user",
     label: "Professores",
-    link: "aulas"
+    folder: "aulas",
+    page: "aulas",
   },
   {
     icon: "headset",
     label: "Contato",
-    link: "contato"
+    folder: "contato",
+    page: "contato",
   },
   {
     icon: "question",
     label: "Sobre",
-    link: "sobre"
+    folder: "sobre",
+    page: "sobre",
   },
 
 ]
@@ -133,5 +138,27 @@ export const courses = [
     thumb: 6,
     course: "Inglês Técnico para área de TI"
   },
+]
 
+export const aboutCards = [
+  {
+    icon: "graduation-cap",
+    number: "+1k",
+    label: "cursos online"
+  },
+  {
+    icon: "user-graduate",
+    number: "+25k",
+    label: "alunos brilhantes"
+  },
+  {
+    icon: "chalkboard-user",
+    number: "+5k",
+    label: "professores experientes"
+  },
+  {
+    icon: "briefcase",
+    number: "90%",
+    label: "empregabilidade"
+  },
 ]

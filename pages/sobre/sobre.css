@@ -1,0 +1,61 @@
+.row {
+  align-items: center;
+  gap: 1.5rem;
+}
+.row .image {
+  flex: 1 1 40rem;
+}
+.row .image img {
+  width: 100%;
+  height: 40rem;
+}
+.row .content {
+  flex: 1 1 40rem;
+  text-align: center;
+}
+.row .content h3 {
+  font-size: 2.5rem;
+  color: var(--black);
+}
+.row .content p {
+  line-height: 2;
+  font-size: 1.7rem;
+  color: var(--light-color);
+  padding-block: 1rem;
+}
+.row .content a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-inline: auto;
+}
+
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(27.5rem, 1fr));
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 25px;
+}
+.box-container .box {
+  border-radius: 0.5rem;
+  background-color: var(--white);
+  padding: 2rem;
+  display: flex;
+  flex: 1 1 20rem;
+  align-items: center;
+  gap: 2rem;
+}
+.box-container .box i {
+  color: var(--black);
+  font-size: 3rem;
+}
+.box-container .box h3 {
+  color: var(--dark-blue);
+  font-size: 2.5rem;
+}
+.box-container .box span {
+  color: var(--light-color);
+  font-size: 1.6rem;
+}/*# sourceMappingURL=sobre.css.map */
