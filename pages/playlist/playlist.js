@@ -4,19 +4,24 @@ import { courses } from "../../scripts/data.js"
 const header = document.querySelector("header")
 const menu = document.querySelector(".sidebar")
 const playlistDetails = document.querySelector(".row")
-
+const videosSection = document.querySelector(".box-container")
 
 const codCourse = localStorage.getItem("codCourse")
+const { prof, profPic, thumb, date, course, numOfVid } = courses.find((course) => course.cod === codCourse)
 
-const { prof, profPic, thumb, date, course, numOfVideos } = courses.find((course) => course.cod === codCourse)
 
+header.innerHTML = navbar()
+menu.innerHTML = sidebar()
 
 playlistDetails.innerHTML = `
-  <div class="col">
+       <div class="col">
           <form action="" method="post" class="save-list">
             <button type="submit"><i class="far fa-bookmark"></i><span>salvar playlist</span></button>
           </form>
-          <img src="../../assets/imgs/thumb-${thumb}.png" alt="" class="thumb">
+          <div class="thumb">
+            <span>${numOfVid} vídeos</span>
+            <img src="../../assets/imgs/thumb-${thumb}.png" alt="">
+          </div>
         </div>
 
         <div class="col">
@@ -41,7 +46,13 @@ playlistDetails.innerHTML = `
         </div>
   `
 
-
-
-header.innerHTML = navbar()
-menu.innerHTML = sidebar()
+for (let i = 1; i <= numOfVid; i++) {
+  videosSection.innerHTML += `
+       <a href="" class="box">
+          <i class="fas fa-play"></i>
+          <img src="../../assets/imgs/thumb-${thumb}.png" alt="">
+          <span>Aula ${i}</span>
+          <h3>${course}</h3>
+        </a>
+  `
+}

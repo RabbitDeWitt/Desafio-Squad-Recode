@@ -122,7 +122,7 @@ export const courses = [
     prof: "Hermione Granger",
     profPic: 5,
     date: "07-07-2023",
-    numOfVid: 25,
+    numOfVid: 20,
     thumb: 4,
     course: "Inglês Acadêmico"
   },

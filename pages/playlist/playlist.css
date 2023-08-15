@@ -39,8 +39,22 @@
   color: var(--white);
 }
 .row .col .thumb {
-  width: 100%;
+  position: relative;
   height: 30rem;
+}
+.row .col .thumb span {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 2rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.row .col .thumb img {
+  width: 100%;
+  height: 100%;
   border-radius: 0.5rem;
   -o-object-fit: cover;
      object-fit: cover;
@@ -86,4 +100,55 @@
 }
 .row .col .details .date span {
   color: var(--light-color);
+}
+
+.box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+.box-container .box {
+  position: relative;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  background-color: var(--white);
+}
+.box-container .box img {
+  height: 20rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 1rem;
+}
+.box-container .box i {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  right: 2rem;
+  height: 20rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+.box-container .box span {
+  font-size: 1.5rem;
+  color: var(--black);
+}
+.box-container .box h3 {
+  font-size: 2rem;
+  color: var(--black);
+  transition: 0.2s ease-out;
+}
+.box-container .box:hover i {
+  display: flex;
+}
+.box-container .box:hover h3 {
+  color: var(--dark-blue);
 }/*# sourceMappingURL=playlist.css.map */
