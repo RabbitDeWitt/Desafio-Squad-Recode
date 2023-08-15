@@ -24,6 +24,10 @@ const showPlaylist = (cod) => {
   localStorage.setItem("codCourse", cod);
 }
 
+const setClass = (numOfClass) => {
+  localStorage.setItem("class", numOfClass)
+}
+
 
 
 

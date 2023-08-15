@@ -48,7 +48,7 @@ playlistDetails.innerHTML = `
 
 for (let i = 1; i <= numOfVid; i++) {
   videosSection.innerHTML += `
-       <a href="" class="box">
+       <a href="../video-player/video-player.html" onclick="setClass(${i})" class="box">
           <i class="fas fa-play"></i>
           <img src="../../assets/imgs/thumb-${thumb}.png" alt="">
           <span>Aula ${i}</span>
@@ -56,3 +56,4 @@ for (let i = 1; i <= numOfVid; i++) {
         </a>
   `
 }
+

@@ -1,0 +1,85 @@
+@import "../../styles/variables";
+
+.video-details {
+  background-color: var(--white);
+  padding: 2rem;
+
+  .video {
+    width: 100%;
+    border-radius: .5rem;
+  }
+
+  .num-class {
+    font-size: $fs-15;
+    color: var(--black);
+  }
+
+  .title {
+    font-size: $fs-20;
+    color: var(--black);
+    padding-block: 1.5rem;
+  }
+
+  .info {
+    display: flex;
+    gap: 2rem;
+    font-size: $fs-16;
+    padding-bottom: 1.5rem;
+    border-bottom: var(--border);
+
+    i {
+      margin-right: 1rem;
+      color: var(--dark-blue);
+    }
+
+    span {
+      color: var(--light-color);
+    }
+  }
+
+  .tutor {
+    padding-block: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    img {
+      @include profileImage(7rem);
+    }
+
+    h3 {
+      font-size: $fs-20;
+      color: var(--black);
+      margin-bottom: .2rem;
+    }
+
+    span {
+      font-size: $fs-15;
+      color: var(--light-color);
+    }
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    justify-content: space-between;
+
+    a {
+      margin-top: 0;
+      width: fit-content;
+    }
+
+  }
+
+  .description {
+    padding-top: 2rem;
+
+    p {
+      line-height: 2;
+      font-size: $fs-17;
+      color: var(--light-color);
+      white-space: pre-line;
+    }
+  }
+}
