@@ -35,7 +35,7 @@ courses.sort((a, b) => {
 })
 
 for (let i = 0; i < 4; i++) {
-  const { prof, profPic, date, numOfVid, thumb, course } = courses[i]
+  const { cod, prof, profPic, date, numOfVid, thumb, course } = courses[i]
   coursesSection.innerHTML += `
         <div class="box">
           <div class="tutor">
@@ -50,7 +50,7 @@ for (let i = 0; i < 4; i++) {
             <span>${numOfVid} videos</span>
           </div>
           <h3 class="title">${course}</h3>
-          <a href="../playlist/playlist.html" class="btn btn-dark-blue">ver playslist</a>
+          <a href="../playlist/playlist.html" class="btn btn-dark-blue" onclick="showPlaylist(${cod})">ver playslist</a>
         </div>
   `
 }

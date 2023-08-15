@@ -91,6 +91,7 @@ export const quickOptions = [
 
 export const courses = [
   {
+    cod: "1",
     prof: "Luna Lovegood",
     profPic: 2,
     date: "05-05-2023",
@@ -99,6 +100,7 @@ export const courses = [
     course: "Preparação - Exames de Proficiência"
   },
   {
+    cod: "2",
     prof: "Ron Weasley",
     profPic: 3,
     date: "11-05-2023",
@@ -107,6 +109,7 @@ export const courses = [
     course: "Inglês para Negócios"
   },
   {
+    cod: "3",
     prof: "Albus Dumbledore",
     profPic: 9,
     date: "21-07-2023",
@@ -115,6 +118,7 @@ export const courses = [
     course: "Inglês Geral"
   },
   {
+    cod: "4",
     prof: "Hermione Granger",
     profPic: 5,
     date: "07-07-2023",
@@ -123,6 +127,7 @@ export const courses = [
     course: "Inglês Acadêmico"
   },
   {
+    cod: "5",
     prof: "Draco Malfoy",
     profPic: 6,
     date: "27-06-2023",
@@ -131,6 +136,7 @@ export const courses = [
     course: "Inglês para viagens"
   },
   {
+    cod: "6",
     prof: "Minerva McGonagall",
     profPic: 7,
     date: "09-06-2023",

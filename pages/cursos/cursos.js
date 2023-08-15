@@ -12,7 +12,7 @@ courses.sort((a, b) => {
   return a.course < b.course ? -1 : a.course > b.course ? 1 : 0
 })
 
-courses.map(({ prof, profPic, date, numOfVid, thumb, course }) => {
+courses.map(({ cod, prof, profPic, date, numOfVid, thumb, course }) => {
   coursesSection.innerHTML += `
         <div class="box">
           <div class="tutor">
@@ -27,7 +27,7 @@ courses.map(({ prof, profPic, date, numOfVid, thumb, course }) => {
             <span>${numOfVid} videos</span>
           </div>
           <h3 class="title">${course}</h3>
-          <a href="../playlist/playlist.html" class="btn btn-dark-blue">ver playslist</a>
+          <a href="../playlist/playlist.html" class="btn btn-dark-blue" onclick="showPlaylist(${cod})">ver playslist</a>
         </div>
 `
 })
