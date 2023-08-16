@@ -14,8 +14,8 @@ export const menuItens = [
   {
     icon: "chalkboard-user",
     label: "Professores",
-    folder: "aulas",
-    page: "aulas",
+    folder: "teachers",
+    page: "teachers",
   },
   {
     icon: "headset",

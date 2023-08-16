@@ -20,7 +20,7 @@ const toggleSearchForm = () => {
   profile.classList.remove("active")
 }
 
-const showPlaylist = (cod) => {
+const setCourse = (cod) => {
   localStorage.setItem("codCourse", cod);
 }
 

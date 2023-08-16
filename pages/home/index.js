@@ -1,4 +1,4 @@
-import { navbar, sidebar } from "../../scripts/components.js";
+import { cardCourse, navbar, sidebar } from "../../scripts/components.js";
 import { courses, quickOptions } from "../../scripts/data.js";
 
 const header = document.querySelector("header")
@@ -35,24 +35,7 @@ courses.sort((a, b) => {
 })
 
 for (let i = 0; i < 4; i++) {
-  const { cod, prof, profPic, date, numOfVid, thumb, course } = courses[i]
-  coursesSection.innerHTML += `
-        <div class="box">
-          <div class="tutor">
-            <img src="/assets/imgs/pic-${profPic}.jpg" alt="">
-            <div class="info">
-              <h3>${prof}</h3>
-              <span>${date}</span>
-            </div>
-          </div>
-          <div class="thumb">
-            <img src="/assets/imgs/thumb-${thumb}.png" alt="">
-            <span>${numOfVid} videos</span>
-          </div>
-          <h3 class="title">${course}</h3>
-          <a href="../playlist/playlist.html" class="btn btn-dark-blue" onclick="showPlaylist(${cod})">ver playslist</a>
-        </div>
-  `
+  coursesSection.innerHTML += cardCourse(courses[i])
 }
 
 
