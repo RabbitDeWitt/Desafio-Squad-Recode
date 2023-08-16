@@ -20,8 +20,8 @@ export const menuItens = [
   {
     icon: "headset",
     label: "Contato",
-    folder: "contato",
-    page: "contato",
+    folder: "contact",
+    page: "contact",
   },
   {
     icon: "question",
