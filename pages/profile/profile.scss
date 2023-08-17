@@ -1,0 +1,80 @@
+@import "../../styles/variables";
+
+.details {
+  @include box(var(--white));
+
+  a {
+    width: fit-content;
+  }
+
+  .user {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    img {
+      @include profileImage(10rem);
+      margin-bottom: .5rem;
+    }
+
+    h3 {
+      font-size: $fs-20;
+      margin: .5rem 0;
+      color: var(--black);
+    }
+
+    p {
+      font-size: $fs-17;
+      color: var(--light-color);
+      margin-bottom: .5rem;
+    }
+
+    a {
+      margin-inline: auto;
+    }
+
+  }
+
+
+  .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
+
+    .box {
+      background-color: var(--light-bg);
+      border-radius: .5rem;
+      padding: 2rem;
+      flex: 1 1 30rem;
+
+      .flex {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        margin-bottom: 1rem;
+
+        i {
+          height: 4.5rem;
+          width: 4.5rem;
+          border-radius: .5rem;
+          background-color: var(--black);
+          line-height: 4.4rem;
+          font-size: $fs-20;
+          text-align: center;
+          color: var(--white);
+        }
+
+        h3 {
+          font-size: $fs-20;
+          color: var(--dark-blue);
+          margin-bottom: .2rem;
+        }
+
+        span {
+          font-size: $fs-15;
+          color: var(--light-color);
+        }
+      }
+    }
+  }
+}
