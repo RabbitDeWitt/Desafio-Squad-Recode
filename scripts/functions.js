@@ -6,7 +6,11 @@ const offcanvas = body.querySelector(".offcanvas")
 const logo = body.querySelector("#logo")
 
 
-localStorage.setItem("dark-mode", "false")
+const darkMode = localStorage.getItem("dark-mode")
+
+if (darkMode === "true") {
+  enableDarkMode()
+}
 
 
 
@@ -37,7 +41,7 @@ window.onscroll = () => {
 }
 
 
-const enableDarkMode = () => {
+function enableDarkMode() {
   toggleBtn.classList.replace("fa-moon", "fa-sun")
   localStorage.setItem("dark-mode", "true")
   body.classList.add("dark")
@@ -45,7 +49,7 @@ const enableDarkMode = () => {
   logo.src = "../../assets/icons/logo-texto-branco.svg"
 }
 
-const disableDarkMode = () => {
+function disableDarkMode() {
   toggleBtn.classList.replace("fa-sun", "fa-moon")
   localStorage.setItem("dark-mode", "false")
   body.classList.remove("dark")
