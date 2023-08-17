@@ -28,7 +28,7 @@ export const navbar = () => {
         <a href="../profile/profile.html" class="btn d-block w-100 btn-dark-blue">Ver perfil</a>
         <div class="d-flex gap-3 mt-3">
           <a href="#" class="btn btn-orange">Login</a>
-          <a href="#" class="btn btn-orange">Registrar</a>
+          <a href="../register/register.html" class="btn btn-orange">Registrar</a>
         </div>
       </div>
 
