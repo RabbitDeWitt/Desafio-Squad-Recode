@@ -25,7 +25,7 @@ export const navbar = () => {
         <img src="../../assets/imgs/pic-1.jpg" alt="Foto de Perfil" class="object-fit-cover">
         <h3 class="name">Harry Potter</h3>
         <p class="role">Aluno</p>
-        <a href="#" class="btn d-block w-100 btn-dark-blue">Ver perfil</a>
+        <a href="../profile/profile.html" class="btn d-block w-100 btn-dark-blue">Ver perfil</a>
         <div class="d-flex gap-3 mt-3">
           <a href="#" class="btn btn-orange">Login</a>
           <a href="#" class="btn btn-orange">Registrar</a>
@@ -49,7 +49,7 @@ export const sidebar = () => {
       <img src="../../assets/imgs/pic-1.jpg" alt="Foto de Perfil" class="object-fit-cover">
       <h3 class="name">Harry Potter</h3>
       <p class="role">Aluno</p>
-      <a href="#" class="btn d-block w-100 btn-dark-blue">Ver perfil</a>
+      <a href="../profile/profile.html" class="btn d-block w-100 btn-dark-blue">Ver perfil</a>
     </div>
     <nav class="navbar d-flex flex-column align-items-start justify-content-around ">
     ${links}
