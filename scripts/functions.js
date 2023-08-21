@@ -12,6 +12,10 @@ if (darkMode === "true") {
   enableDarkMode()
 }
 
+const logout = () => {
+  localStorage.setItem("user", null)
+}
+
 
 
 const toggleProfile = () => {
