@@ -8,13 +8,13 @@ console.log(JSON.parse(localStorage.getItem("users")))
 
 console.log(user)
 
-const profile = (user) => {
+const profile = ({ name, userPic, type }) => {
   return user !== null ?
     `
   <div class="profile position-absolute text-center" id="profile-modal">
-    <img src="../../assets/imgs/pic-${user.profPic}.jpg" alt="Foto de Perfil" class="object-fit-cover">
-    <h3 class="name">${user.name}</h3>
-    <p class="role">${user.type}</p>
+    <img src="../../assets/imgs/pic-${userPic}.jpg" alt="Foto de Perfil" class="object-fit-cover">
+    <h3 class="name">${name}</h3>
+    <p class="role">${type}</p>
     <a href="../profile/profile.html" class="btn d-block w-100 btn-dark-blue">Ver perfil</a>
     <div class="d-flex gap-3 mt-3">
       <a href="../home/index.html" class="btn btn-orange" onclick="logout()">Logout</a>

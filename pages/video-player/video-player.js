@@ -1,10 +1,16 @@
 import { navbar, sidebar } from "../../scripts/components.js"
-import { courses } from "../../scripts/data.js"
+import { comments, courses } from "../../scripts/data.js"
 
 const header = document.querySelector("header")
 const menu = document.querySelector(".sidebar")
 const player = document.querySelector(".player")
+const countComments = document.querySelector("#count-comments")
+const userComment = document.querySelector("#user-comment")
+const commentsSection = document.querySelector("#comments")
+
+const { name, userPic } = JSON.parse(localStorage.getItem("user"))
 const numClass = localStorage.getItem("class")
+
 
 const codCourse = localStorage.getItem("codCourse")
 const { prof, profPic, thumb, date, course } = courses.find((course) => course.cod === codCourse)
@@ -38,3 +44,45 @@ player.innerHTML = `
         </div>
       </div>
 `
+
+countComments.innerText = `${comments.length + 1} comentarios`
+
+
+userComment.innerHTML = `
+        <div class="box">
+
+          <div class="user">
+            <img src="../../assets/imgs/pic-${userPic}.jpg" alt="">
+            <div>
+              <h3>${name}</h3>
+              <span>23-08-2023</span>
+            </div>
+          </div>
+          <p class="text">Adorei a aula.</p>
+          <form class="flex-btn">
+            <button class="btn btn-orange">Editar</button>
+            <button class="btn btn-red">Deletar</button>
+          </form>
+        </div>
+
+
+`
+
+
+comments.map(({ name, userPic, date, text }) => {
+  commentsSection.innerHTML += `
+          <div class="box">
+
+            <div class="user">
+              <img src="../../assets/imgs/pic-${userPic}.jpg" alt="">
+              <div>
+                <h3>${name}</h3>
+                <span>${date}</span>
+              </div>
+            </div>
+            <p class="text">${text}</p>
+
+          </div>
+`
+
+})

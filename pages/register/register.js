@@ -24,7 +24,7 @@ btnSignUp.addEventListener("click", () => {
       email: email.value,
       type: type.value,
       password: password.value,
-      profPic: 1,
+      userPic: 1,
     }
     users.push(user)
     localStorage.setItem("users", JSON.stringify(users))
