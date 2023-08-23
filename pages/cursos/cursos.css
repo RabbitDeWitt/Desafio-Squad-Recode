@@ -53,7 +53,6 @@
   font-size: 1.5rem;
 }
 #courses .box-container .box .btn {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }

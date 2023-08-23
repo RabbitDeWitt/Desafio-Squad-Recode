@@ -23,7 +23,7 @@
   color: var(--light-color);
 }
 .form-container form label span {
-  color: hsl(6deg, 78%, 57%);
+  color: hsl(6, 78%, 57%);
 }
 .form-container form .box {
   width: 100%;
@@ -35,7 +35,6 @@
   background-color: var(--light-bg);
 }
 .form-container form .btn {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-top: 1.5rem;

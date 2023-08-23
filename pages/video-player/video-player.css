@@ -58,7 +58,6 @@
 }
 .video-details form a {
   margin-top: 0;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }

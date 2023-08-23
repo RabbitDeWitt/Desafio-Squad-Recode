@@ -37,7 +37,6 @@
   font-size: 1.8rem;
 }
 .contact .row form .btn {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-inline: auto;

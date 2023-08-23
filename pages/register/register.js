@@ -19,6 +19,7 @@ menu.innerHTML = sidebar()
 btnSignUp.addEventListener("click", () => {
   if (password.value === confPassword.value) {
     const user = {
+      id: users.length + 1,
       name: name.value,
       email: email.value,
       type: type.value,

@@ -29,7 +29,6 @@
   padding-block: 1rem;
 }
 .row .content a {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-inline: auto;

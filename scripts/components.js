@@ -3,7 +3,8 @@ import { menuItens } from "./data.js"
 
 const user = JSON.parse(localStorage.getItem("user"))
 
-/* console.log(JSON.parse(localStorage.getItem("users"))) */
+console.log(JSON.parse(localStorage.getItem("users")))
+
 
 console.log(user)
 

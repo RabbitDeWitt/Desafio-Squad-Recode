@@ -4,7 +4,6 @@
   padding: 2rem;
 }
 .details a {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
